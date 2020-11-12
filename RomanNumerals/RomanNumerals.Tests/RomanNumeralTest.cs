@@ -22,5 +22,27 @@ namespace RomanNumerals.Tests
 
             Assert.Equal(expected, result);
         }
+
+        [Fact]
+        public void Given_Input_2_Should_Return_II()
+        {
+            var sut = new RomanNumerals();
+
+            var result = sut.Convert(2);
+            var expected = "II";
+
+            Assert.Equal(expected, result);
+        }
+
+        [Fact]
+        public void Given_Input_3_Should_Return_III()
+        {
+            var sut = new RomanNumerals();
+
+            var result = sut.Convert(3);
+            var expected = "III";
+
+            Assert.Equal(expected, result);
+        }
     }
 }
