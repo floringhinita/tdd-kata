@@ -19,6 +19,11 @@
                 return "III";
             }
 
+            if (number == 4)
+            {
+                return "IV";
+            }
+
 
             return "";
         }

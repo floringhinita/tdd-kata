@@ -44,5 +44,18 @@ namespace RomanNumerals.Tests
 
             Assert.Equal(expected, result);
         }
+
+        [Fact]
+        public void Given_Input_4_Should_Return_IV()
+        {
+            var sut = new RomanNumerals();
+
+            var result = sut.Convert(4);
+            var expected = "IV";
+
+            Assert.Equal(expected, result);
+        }
+
+
     }
 }
